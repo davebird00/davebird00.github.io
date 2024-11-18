@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 
 function App() {
   return (
@@ -7,11 +7,8 @@ function App() {
       <div className="App-header">
           <header className="landing page headers">
               <h1>
-                  David Bird
+                under construction.
               </h1>
-              <h2>
-                under construction
-              </h2>
           </header>
       </div>
     </div>
