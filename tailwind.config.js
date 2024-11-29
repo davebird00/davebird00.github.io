@@ -31,6 +31,12 @@ module.exports = {
         'secondary': '#46A07E',
         'tertiary': '#376D5D'
       },
+
+      fontSize: {
+        'vw-5': '5vw',
+        'vw-10': '10vw',
+        'vw-15': '15vw'
+      },
     },
   },
   plugins: [],

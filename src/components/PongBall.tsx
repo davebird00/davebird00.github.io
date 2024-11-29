@@ -6,7 +6,8 @@ const PongBall = () => {
   const mountRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const ref = mountRef.current;
+    if (!ref) return;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -19,7 +20,7 @@ const PongBall = () => {
     };
     updateCanvasSize();
     renderer.setClearColor('#205556');
-    mountRef.current.appendChild(renderer.domElement);
+    ref.appendChild(renderer.domElement);
 
     const geometry = new THREE.SphereGeometry(1, 32, 32);
 
@@ -81,8 +82,6 @@ const PongBall = () => {
       }
 
       sphere.position.y = positionY;
-      sphere.rotation.x += 0.01;
-      sphere.rotation.y += 0.01;
 
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
@@ -97,7 +96,7 @@ const PongBall = () => {
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      mountRef.current?.removeChild(renderer.domElement);
+      ref.removeChild(renderer.domElement);
     };
   }, []);
 

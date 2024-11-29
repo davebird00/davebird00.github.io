@@ -1,47 +1,34 @@
-import React from "react";
+import React from 'react';
 
+// Static data: projects with names, descriptions, and optional GitHub URLs
 const projects = [
-    {
-        name: 'Media Analysis Website',
-        link: "link tbd",
-        image: 'construction.png',
-        field: 'Web Development',
-        updated: 'Months Ago',
-        updatedDateTime: '2024-01-1T01:01Z'
-    }
-]
+  { name: 'To Be Added', description: 'desc.', githubUrl: 'https://github.com/user/project-a' }
+];
 
-export default function Projects() {
-    return (
-      <div className="w-full h-full relative pt-20">
-          <ul className="divide-y divide-gray-100">
-          {projects.map((project) => (
-            <li key={project.name} className="flex justify-between gap-x-6 py-5">
-              <div className="flex min-w-0 gap-x-4">
-                <img alt="construction" src={process.env.PUBLIC_URL + `assets/images/${project.image}`} className="h-12 w-12 flex-none" />
-                <div className="min-w-0 flex-auto">
-                  <p className="text-sm/6 font-semibold text-gray-900">{project.name}</p>
-                  <p className="text-sm/6 font-semibold text-gray-900">{project.link}</p>
-                </div>
-              </div>
-              <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                <p className="text-sm/6 text-gray-900">{project.field}</p>
-                {project.updated ? (
-                  <p className="mt-1 text-xs/5 text-gray-500">
-                    Updated <time dateTime={project.updatedDateTime}>{project.updated}</time>
-                  </p>
-                ) : (
-                  <div className="mt-1 flex items-center gap-x-1.5">
-                    <div className="flex-none rounded-full bg-emerald-500/20 p-1">
-                      <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    </div>
-                    <p className="text-xs/5 text-gray-500">Online</p>
-                  </div>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div> 
-    )
-  }
+const ProjectList: React.FC = () => {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-semibold text-center mb-6">All Projects</h1>
+      <ul className="space-y-4">
+        {projects.map((project) => (
+          <li key={project.name} className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <h2 className="text-lg font-semibold text-gray-800">{project.name}</h2>
+            <p className="text-sm text-gray-600 mt-2">{project.description}</p>
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 mt-2 inline-block hover:text-blue-800"
+              >
+                View on GitHub
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ProjectList;

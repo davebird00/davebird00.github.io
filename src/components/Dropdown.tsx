@@ -17,13 +17,13 @@ const Dropdown = () => {
   return (
     <div className='relative me-auto flex flex-col ps-0'>
       <button
-        className={`mb-4 lg:mb-0 lg:pe-2 bg-transparent hover:text-neutral-400 transition-transform duration-400 ease-linear ${isOpen ? 'rotate-180': ''}`}
+        className={`hover:text-neutral-400 transition-transform duration-400 ease-linear ${isOpen ? 'rotate-180': ''}`}
         onClick={toggleDropdown}>
         &#9660;
       </button>
 
       {isOpen && (
-        <ul className={`absolute top-full left-0 w-50 bg-tertiary shadow-sm rounded-md animate-slideDown ${
+        <ul className={`absolute top-full left-0 w-50 bg-tertiary shadow-sm rounded-s animate-slideDown ${
           isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
         } origin-top`}
         >

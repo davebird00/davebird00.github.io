@@ -30,16 +30,16 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="relative w-full h-full">
-            <div className="w-full h-full relative pt-16">
+        <div className="relative w-full h-full pt-16">
+            <div className="w-full h-full relative">
                 <PongBall />
             </div>
 
             <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-                <h1 className='text-center text-9xl p-8 font-extrabold [text-shadow:_0_8px_8px_rgb(0_0_0_/_0.3)]'>
+                <h1 className='text-center text p-8 text-vw-10 font-extrabold [text-shadow:_0_8px_8px_rgb(0_0_0_/_0.3)]'>
                     DAVE BIRD
                 </h1>
-                <div className={`text-6xl text-center transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+                <div className={`text-vw-5 text-center transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
                     <h2>
                         {text}
                     </h2>
@@ -59,7 +59,7 @@ export default function Home() {
                         href='https://tailwindcss.com/'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-secondary hover:underline relative z-10'>tailwind css.</a>
+                        className='text-secondary hover:underline relative z-10'>tailwind css</a>
                 </div>
                 <div className='text-black'>
                     Design inspiration from {' '}
