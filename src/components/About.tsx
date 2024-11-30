@@ -9,7 +9,7 @@ export default function About() {
                     src={`${process.env.PUBLIC_URL}/assets/images/carmyandme.png`}
                     alt='daves pet' 
                 />
-                <figcaption className='text-center m-3'>Carmy &#9829;</figcaption>
+                <figcaption className='text-center m-3'>Carmy</figcaption>
             </figure>
 
             <div className='flex-row space-y-8 pl-11 w-1/4 text-wrap'>
@@ -23,7 +23,10 @@ export default function About() {
                     className='text-secondary hover:underline relative z-10'>Computershare</a> as a Junior Software Developer.
                 </p>
                 <p>
-                    In my free time you can find me playing hockey, golf, and skiing the hulking mountains of Ontario. I don't use social media much so shoot me an email if you need to get in touch! 
+                    In my free time you can find me golfing, watching movies, listening to music, or cooking.
+                </p>
+                <p>
+                    I don't use social media much so shoot me an email if you need to get in touch!
                 </p>
             </div>
         </div>

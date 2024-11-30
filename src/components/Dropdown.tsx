@@ -23,7 +23,7 @@ const Dropdown = () => {
       </button>
 
       {isOpen && (
-        <ul className={`absolute top-full left-0 w-50 bg-tertiary shadow-sm rounded-s animate-slideDown ${
+        <ul className={`absolute top-full left-0 w-50 bg-tertiary shadow-lg rounded-s animate-slideDown ${
           isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
         } origin-top`}
         >

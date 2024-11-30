@@ -33,6 +33,7 @@ module.exports = {
       },
 
       fontSize: {
+        'vw-1': '2vw',
         'vw-5': '5vw',
         'vw-10': '10vw',
         'vw-15': '15vw'
