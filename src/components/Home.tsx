@@ -45,9 +45,10 @@ export default function Home() {
                     </h2>
                 </div>
             </div>
-            <div className='tech-list fixed bottom-0 w-full flex flex-col items-end pr-11 pb-11 z-20'>
-                <div className='text-black'>
-                    Made with <a
+            <div className='tech-list text-black fixed bottom-0 w-full flex flex-col items-end pr-11 pb-11 z-20'>
+                <div>
+                    Made with{' '}
+                    <a
                         href='https://react.dev/'
                         target='_blank'
                         rel='noopener noreferrer'
@@ -59,17 +60,19 @@ export default function Home() {
                         href='https://tailwindcss.com/'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-secondary hover:underline relative z-10'>tailwind css</a>
+                        className='text-secondary hover:underline relative z-10'>
+                            tailwind css
+                    </a>
                 </div>
-                <div className='text-black'>
+                <div>
                     Design inspiration from {' '}
                     <a 
                           href='https://www.shiyunlu.com/'
                           target='_blank'
                           rel='noopener noreferrer'
                           className='text-secondary hover:underline relative z-10'
-                        >
-                          Shiyun Lu
+                    >
+                        Shiyun Lu
                     </a>
                 </div>
             </div>
