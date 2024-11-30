@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHome, FaEnvelope, FaGithub } from "react-icons/fa";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Dropdown from './Dropdown.tsx';
 import Home from './Home.tsx';
 import About from './About.tsx';

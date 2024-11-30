@@ -16,7 +16,7 @@ export default function About() {
                 <div className="flex flex-col space-y-8 w-full md:w-2/3 text-wrap">
                     <p>Almost-Torontonian, inventor of awful puns, dog lover.</p>
                     <p>
-                        I work for{' '}
+                        I got a job! I work for{' '}
                         <a
                             href="https://www.computershare.com/ca/en"
                             target="_blank"
@@ -28,7 +28,7 @@ export default function About() {
                         as a Junior Software Developer.
                     </p>
                     <p>
-                        In my free time you can find me golfing, climbing rocks, watching movies, listening to music, or cooking.
+                        In my free time you can find me golfing, climbing rocks, watching movies, listening to music, or cooking. To be honest, I don't play ping pong much but it's (not so secretly) one of my favourite sports.
                     </p>
                     <p>I don't use social media much so shoot me an email if you need to get in touch!</p>
                 </div>
