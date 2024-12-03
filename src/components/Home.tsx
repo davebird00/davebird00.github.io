@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import PongBall from './PongBall.tsx';
+import Shine from './Shine.tsx';
 
 const messages = [
     "software developer",
-    "ping pong athlete",
-    "dog dad."
+    "video game enjoyer",
+    "dog dad"
 ];
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
     return (
         <div className="relative w-full h-full pt-16">
             <div className="w-full h-full relative">
-                <PongBall />
+                <Shine />
             </div>
 
             <div className="absolute inset-0 flex flex-col justify-center items-center z-10">

@@ -14,23 +14,28 @@ export default function About() {
                 </figure>
 
                 <div className="flex flex-col space-y-8 w-full md:w-2/3 text-wrap">
-                    <p>Almost-Torontonian, inventor of awful puns, dog lover.</p>
+                    <div className='flex flex-row space-x-5'>
+                        <p>Heya!</p>
+                        <p> &#128075;</p>
+                    </div>
+                    <p>Thanks for checking my site out. I'm Dave, an almost-Torontonian software developer.</p>
                     <p>
-                        I got a job! I work for{' '}
+                        I got a job! As of January 2025 I'll be working for{' '}
                         <a
-                            href="https://www.computershare.com/ca/en"
+                            href="https://www.computershare.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-secondary hover:underline relative z-10"
                         >
                             Computershare
-                        </a>{' '}
-                        as a Junior Software Developer.
+                        </a>.
                     </p>
                     <p>
-                        In my free time you can find me golfing, climbing rocks, watching movies, listening to music, or cooking. To be honest, I don't play ping pong much but it's (not so secretly) one of my favourite sports.
+                        When I'm not working, you can find me golfing, climbing rocks, watching movies, gaming, listening to music, or cooking with my partner.
                     </p>
-                    <p>I don't use social media much so shoot me an email if you need to get in touch!</p>
+                    <p>
+                        Although I don't use social media much, shoot me an email if you'd like to get in touch!
+                    </p>
                 </div>
             </div>
         </div>
