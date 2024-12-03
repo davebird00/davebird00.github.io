@@ -8,24 +8,22 @@ const messages = [
 ];
 
 export default function Home() {
-    const [text, setText] = useState("David Bird");  // Initial text state
-    const [fade, setFade] = useState(false);  // State for controlling the fade effect
+    const [text, setText] = useState("David Bird");
+    const [fade, setFade] = useState(false);
 
     useEffect(() => {
         let index = 0;
         const intervalId = setInterval(() => {
             setFade(false);
 
-            // After fade-out, update the text
             setTimeout(() => {
                 setText(messages[index]);
                 setFade(true); 
                 index = (index + 1) % messages.length; 
-            }, 400);  // Wait for fade-out to complete (300ms)
+            }, 400); 
 
-        }, 2105);  // Update text every 3 seconds (3000ms)
+        }, 2000);
 
-        // Cleanup interval on component unmount
         return () => clearInterval(intervalId);
     }, []);
 
