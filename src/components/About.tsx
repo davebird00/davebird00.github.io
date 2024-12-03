@@ -34,7 +34,7 @@ export default function About() {
                         When I'm not working, you can find me golfing, climbing rocks, watching movies, gaming, listening to music, or cooking with my partner.
                     </p>
                     <p>
-                        Although I don't use social media much, shoot me an email if you'd like to get in touch!
+                        I don't use social media much, so shoot me an email if you'd like to get in touch!
                     </p>
                 </div>
             </div>
